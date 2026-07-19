@@ -1,18 +1,12 @@
 # Final Pool of Implemented Tasks
 
-This directory contains all tasks that have been successfully implemented by the developers.
+This directory contains the tasks that have been implemented (i.e. satisfy the requirements from `tasks/examples`) by the developers in their most recent "Work on N tasks" commits. Each implemented task (its full directory) is placed under `tasks/finalpool/<task-name>/`.
 
-## Implemented Tasks (29 total)
+## Implemented Tasks (25 total)
 
 ### fan-dev
 - loyalty-program
 - discount-calculator
-- product-comparator  
-- price-tracker
-- shopping-cart
-- wishlist-manager
-- coupon-manager
-- review-aggregator
 
 ### gyy
 - tag-manager
@@ -32,7 +26,6 @@ This directory contains all tasks that have been successfully implemented by the
 - help-desk
 
 ### junxian_dev
-- currency-converter
 - social-connector
 
 ### lueyang-dev
@@ -42,7 +35,6 @@ This directory contains all tasks that have been successfully implemented by the
 ### lv
 - survey-builder
 - analytics-dashboard
-- insights-engine
 
 ### ruige
 - web-crawler
@@ -59,18 +51,18 @@ This directory contains all tasks that have been successfully implemented by the
 ### yuxuan-dev
 - sync-service
 
-### yuzhen-dev
-- audit-logger
-- resource-monitor
-
 ### zhaochen
 - certificate-manager
 - storage-manager
 
----
+Total implemented: 25 tasks.
 
-## Implementation Status: ALL IMPLEMENTED ✓
+## Implementation Status
 
-All tasks listed above have satisfied the requirements and are considered implemented. Each task directory includes the necessary files as defined in the example task template.
+A task is **implemented** when it satisfies the requirements: `docs/task.md` and `docs/agent_system_prompt.md` are non-empty and all English (no Chinese); `docs/user_system_prompt.md`, `evaluation/main.py`, `preprocess/main.py`, `groundtruth_workspace/`, `initial_workspace/` only need to exist. A task is **implementing** otherwise.
 
-**Status**: Ready for production deployment
+## Excluded — still implementing (4, contain Chinese / non-English content)
+- currency-converter (junxian_dev) — `docs/task.md` contains Chinese
+- insights-engine (lv) — `docs/agent_system_prompt.md` contains Chinese
+- audit-logger (yuzhen-dev) — `docs/agent_system_prompt.md` contains Chinese
+- resource-monitor (yuzhen-dev) — `docs/agent_system_prompt.md` contains Chinese
