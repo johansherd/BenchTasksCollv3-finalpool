@@ -1,12 +1,6 @@
-# Evaluation script for tag-manager
+def main():
+    print("evaluation for tag-manager")
 
-def run_evaluation():
-    # TODO: Implement actual evaluation logic
-    return True
 
-if __name__ == '__main__':
-    result = run_evaluation()
-    if result:
-        print('Evaluation passed')
-    else:
-        print('Evaluation failed')
+if __name__ == "__main__":
+    main()

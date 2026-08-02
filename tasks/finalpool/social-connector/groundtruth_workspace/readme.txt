@@ -1,1 +1,1 @@
-Groundtruth data for social-connector
+groundtruth workspace

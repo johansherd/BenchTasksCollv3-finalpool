@@ -1,2 +1,2 @@
-# Preprocessing script
-print('Preprocessing completed')
+def main():
+    pass

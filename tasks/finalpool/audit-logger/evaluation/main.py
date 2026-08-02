@@ -1,5 +1,5 @@
 def main():
-    print("evaluation for social-connector")
+    print("evaluation for audit-logger")
 
 
 if __name__ == "__main__":
