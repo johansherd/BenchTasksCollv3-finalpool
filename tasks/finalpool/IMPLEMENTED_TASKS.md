@@ -1,68 +1,85 @@
 # Final Pool of Implemented Tasks
 
-This directory contains the tasks that have been implemented (i.e. satisfy the requirements from `tasks/examples`) by the developers in their most recent "Work on N tasks" commits. Each implemented task (its full directory) is placed under `tasks/finalpool/<task-name>/`.
+This directory contains all tasks implemented so far (i.e. their implementation satisfies the requirements from `tasks/examples/example-task`, as tracked in the Notion Task Tracker). Each implemented task (its full directory) is placed under `tasks/finalpool/<task-name>/`.
 
-## Implemented Tasks (25 total)
+## Requirements (from tasks/examples/example-task)
 
-### fan-dev
-- loyalty-program
+- `docs/agent_system_prompt.md` — must be non-empty and all English (no Chinese)
+- `docs/task.md` — must be non-empty and all English (no Chinese)
+- `docs/user_system_prompt.md` — optional; if non-empty, must be all English
+- `task_config.json` — if present, must have non-empty `needed_mcp_servers` and non-empty `needed_local_tools` containing `claim_done`
+- `evaluation/main.py`, `preprocess/main.py`, `groundtruth_workspace/`, `initial_workspace/` — optional; only existence is checked
+
+A task is **implemented** when it satisfies these requirements; otherwise it is **implementing**.
+
+## Implemented tasks in this pool (30 total)
+
+### Previously tracked implemented tasks (5)
+- price-tracker (fan-dev)
+- shipment-tracker (junteng_dev)
+- expense-tracker (ruige)
+- error-tracker (xiaochen_dev)
+- task-scheduler (yuxuan-dev)
+
+### New implemented tasks from the most recent commits (25)
+
+#### fan-dev
 - discount-calculator
+- loyalty-program
 
-### gyy
-- tag-manager
-- sitemap-generator
+#### gyy
 - robots-handler
+- sitemap-generator
+- tag-manager
 
-### haoze
+#### haoze
 - media-organizer
 - streaming-service
 
-### jl_dev
+#### jl_dev
 - customer-feedback-processor
 - inventory-management
 
-### junteng_dev
+#### junteng_dev
 - customer-portal
 - help-desk
 
-### junxian_dev
+#### junxian_dev
 - social-connector
 
-### lueyang-dev
+#### lueyang-dev
 - territory-manager
 - client-portal
 
-### lv
-- survey-builder
+#### lv
 - analytics-dashboard
+- survey-builder
 
-### ruige
-- web-crawler
+#### ruige
 - log-analyzer
+- web-crawler
 
-### wenshuo-dev
+#### wenshuo-dev
 - cache-optimizer
 - scheduler
 
-### xiaochen_dev
-- status-checker
+#### xiaochen_dev
 - health-monitor
+- status-checker
 
-### yuxuan-dev
+#### yuxuan-dev
 - sync-service
 
-### zhaochen
+#### zhaochen
 - certificate-manager
 - storage-manager
 
-Total implemented: 25 tasks.
+## Excluded — still implementing (5)
 
-## Implementation Status
+- currency-converter (junxian_dev) — `docs/task.md` contains Chinese text
+- insights-engine (lv) — `docs/agent_system_prompt.md` contains Chinese text
+- audit-logger (yuzhen-dev) — `docs/agent_system_prompt.md` contains Chinese text
+- resource-monitor (yuzhen-dev) — `docs/agent_system_prompt.md` contains Chinese text
+- (unnamed task by yuxuan-dev) — task name is empty and files were committed at `tasks/yuxuan/` root instead of a task folder (malformed commit e82c829)
 
-A task is **implemented** when it satisfies the requirements: `docs/task.md` and `docs/agent_system_prompt.md` are non-empty and all English (no Chinese); `docs/user_system_prompt.md`, `evaluation/main.py`, `preprocess/main.py`, `groundtruth_workspace/`, `initial_workspace/` only need to exist. A task is **implementing** otherwise.
-
-## Excluded — still implementing (4, contain Chinese / non-English content)
-- currency-converter (junxian_dev) — `docs/task.md` contains Chinese
-- insights-engine (lv) — `docs/agent_system_prompt.md` contains Chinese
-- audit-logger (yuzhen-dev) — `docs/agent_system_prompt.md` contains Chinese
-- resource-monitor (yuzhen-dev) — `docs/agent_system_prompt.md` contains Chinese
+Note: `audit-logger/`, `insights-engine/` and `resource-monitor/` directories under `tasks/finalpool/` are stale leftovers from earlier (incorrect) runs and are NOT part of the implemented pool — they fail the English-only requirement above.
